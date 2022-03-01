@@ -1,0 +1,2 @@
+/* Hide default notifications */
+.update-nag, .updated, .error, .is-dismissible { display: none !important; }

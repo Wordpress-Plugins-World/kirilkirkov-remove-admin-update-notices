@@ -70,7 +70,7 @@ if(!class_exists('KirilKirkov_RemoveAdminUpdateNotices')) {
 		public function admin_init()
 		{
 			if (!is_admin()) {
-				wp_die( 'This code is for admin area only' );
+				wp_die( __('This code is for admin area only', KIRILKIRKOV_REM_ADM_NOTICES_TEXT_DOMAIN) );
 			}
 			
 			register_setting( KIRILKIRKOV_REM_ADM_NOTICES_INPUTS_GROUP, KIRILKIRKOV_REM_ADM_NOTICES_INPUTS_PREFIX.'hide_admin_notices' );
